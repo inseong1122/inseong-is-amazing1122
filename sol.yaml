@@ -3,6 +3,7 @@ Parameters:
     Description: Name of an existing EC2 KeyPair to enable SSH access to the instances. Linked to AWS Parameter
     Type: AWS::EC2::KeyPair::KeyName
     ConstraintDescription: must be the name of an existing EC2 KeyPair.  
+    Default: 'testtrest'
 
 Resources:
 
@@ -16,7 +17,7 @@ Resources:
      EnableDnsHostnames: true
      Tags:
       - Key: Name
-        Value: VPC1-Seoul-AWS
+        Value: VPC1-Seoul-AWS1
   VPC1InternetGateway1:
     Type: AWS::EC2::InternetGateway
     Properties:
